@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ideas List - Suitmedia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div class="navbar">
+    <img src="img/logo.png" alt="Suitmedia Logo" class="logo" />
+    <nav>
+      <ul>
+        <li>Work</li>
+        <li>About</li>
+        <li>Services</li>
+        <li class="active">Ideas</li>
+        <li>Careers</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Ideas</h1>
+      <p>Where all our great things begin</p>
+    </div>
+  </div>
+</header>
+
+
+      <p></p>
+    </div>
+  </header>
+
+  <!-- Filter Options -->
+  <section class="controls">
+    <span>Showing 1 - 10 of 100</span>
+    <div>
+      <label>Show per page:
+        <select id="itemsPerPage" onchange="changeItemsPerPage()">
+          <option>10</option>
+          <option>20</option>
+          <option>50</option>
+        </select>
+      </label>
+      <label>Sort by:
+        <select id="sortBy" onchange="sortItems()">
+          <option>Newest</option>
+          <option>Oldest</option>
+        </select>
+      </label>
+    </div>
+  </section>
+
+  <!-- Card List -->
+  <section class="card-grid" id="cardContainer">
+    <!-- JS akan menampilkan card di sini -->
+  </section>
+
+  <!-- Pagination -->
+  <div class="pagination" id="pagination">
+    <!-- JS akan generate pagination -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
